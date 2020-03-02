@@ -1,9 +1,9 @@
 # biofilm_recognizer_cnn
 
-Breve introduzione
+Breve introduzione: 
 Il sistema realizzato è in grado di riconoscere in maniera automatica la presenza di biofilm in scansioni di rinocitologia, attraverso un sistema basato su rete neurale convoluzionale.
 
-Librerie
+Librerie: 
 Per implementare il sistema sono state utilizzate le seguenti librerie:
 ●	os: libreria contenente metodi per sfruttare le funzionalità specifiche di un sistema operativo. È stata utilizzata per verificare l’esistenza di un percorso, effettuare il join tra path, per iterare sulle immagini e per conoscere il percorso della directory contenente le immagini da analizzare;
 ●	cv2: libreria contenente funzionalità utili per risolvere i problemi di computer vision. Fornisce sia algoritmi classici che algoritmi aggiornati allo stato dell’arte. È stata impiegata per leggere, ridimensionare e convertire le immagini in differenti modelli di colore;
@@ -14,7 +14,7 @@ Per implementare il sistema sono state utilizzate le seguenti librerie:
 ●	tflearn: libreria di Deep Learning modulare e trasparente costruita su Tensorflow. È stata utilizzata per implementare e gestire la CNN;
 ●	scikit-learn: libreria che mette a disposizione l’implementazione di molte delle più note tecniche di Machine Learning per l’analisi dei dati. È stata utilizzata per effettuare operazioni sul dataset come train_test_split, k-fold Cross Validation, generare report per la classificazione e creare la matrice di confusione;
 
-Implementazione
+Implementazione: 
 Il sistema è basato sui seguenti metodi:
 ●	create_data(): in cui ciascuna immagine viene convertita in grayscale e ne viene effettuato il resize. Tale metodo restituisce due array, uno contenente le immagini e uno contenente i label. Il label riportato coincide con il nome della cartella (Biofilm o Other) contenente l’immagine;
 ●	split_data(): metodo che consente di suddividere il dataset in x_train, x_test, y_train e y_test;
